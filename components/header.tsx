@@ -39,7 +39,7 @@ export const Header = () => {
           <Logo className="w-[100px] md:w-[120px]" />
         </a>
         <nav className="flex max-lg:hidden absolute left-1/2 -translate-x-1/2 items-center justify-center gap-x-10">
-          {["Services", "Results", "FAQ", "Contact"].map((item) => (
+          {["Services", "FAQ", "Contact"].map((item) => (
             <a
               className="uppercase inline-block font-mono text-foreground/60 hover:text-foreground duration-150 transition-colors ease-out"
               href={`#${item.toLowerCase()}`}

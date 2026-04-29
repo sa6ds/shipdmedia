@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Pill } from "./pill";
 
 const ShipIcon = () => (
@@ -66,7 +65,7 @@ export function AgencySections() {
         <div className="container">
           <div className="text-center mb-12">
             <Pill className="mb-5">WHAT WE DO</Pill>
-            <h2 className="text-3xl md:text-5xl font-sentient">
+            <h2 className="text-3xl md:text-5xl font-sentient leading-[0.98] tracking-[-0.015em]">
               Built for modern <i className="font-light">brand growth</i>
             </h2>
           </div>
@@ -80,51 +79,25 @@ export function AgencySections() {
                 <div className="flex items-center gap-3 text-primary mb-4">
                   <service.icon />
                 </div>
-                <p className="font-mono text-sm uppercase tracking-wide text-foreground/90">
+                <p className="font-mono text-sm uppercase tracking-[0.04em] text-foreground/90">
                   {service.title}
                 </p>
               </div>
             ))}
           </div>
-        </div>
-      </section>
 
-      <section id="results" className="py-16 md:py-24 border-t border-border/30">
-        <div className="container">
-          <div className="grid md:grid-cols-3 gap-4 md:gap-6">
+          <div className="mt-8 grid md:grid-cols-3 gap-4 md:gap-6">
             {metrics.map((metric) => (
               <div
                 key={metric.label}
                 className="rounded-xl border border-border/50 bg-black/70 px-5 py-7 md:px-6 text-center"
               >
-                <p className="text-3xl md:text-4xl font-sentient">{metric.value}</p>
+                <p className="text-3xl md:text-4xl font-sentient leading-none tracking-[-0.015em]">{metric.value}</p>
                 <p className="mt-2 font-mono text-xs uppercase tracking-wider text-foreground/50">
                   {metric.label}
                 </p>
               </div>
             ))}
-          </div>
-
-          <div
-            id="contact"
-            className="mt-10 rounded-2xl border border-border/50 bg-black/75 px-6 py-10 text-center"
-          >
-            <p className="font-mono text-xs uppercase tracking-widest text-foreground/50">
-              Ready to launch?
-            </p>
-            <h3 className="mt-3 text-2xl md:text-4xl font-sentient">
-              Let&apos;s scale your next campaign
-            </h3>
-            <p className="mt-4 max-w-xl mx-auto font-mono text-sm text-foreground/60">
-              From creator selection to reporting, Shipd Media runs influencer
-              programs that move awareness and revenue.
-            </p>
-            <Link
-              href="mailto:hello@shipdmedia.com"
-              className="inline-block mt-7 font-mono uppercase text-primary hover:text-primary/80 transition-colors"
-            >
-              [hello@shipdmedia.com]
-            </Link>
           </div>
         </div>
       </section>

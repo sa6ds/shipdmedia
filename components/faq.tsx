@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Minus, Plus } from "lucide-react";
+import { Pill } from "./pill";
 
 const faqs = [
   {
@@ -39,10 +40,8 @@ export function FAQ() {
     <section id="faq" className="py-16 md:py-24 border-t border-border/30">
       <div className="container max-w-3xl">
         <div className="text-center mb-12 md:mb-16">
-          <p className="font-mono text-sm text-foreground/40 uppercase tracking-wider mb-4">
-            FAQ
-          </p>
-          <h2 className="text-3xl md:text-4xl font-sentient">
+          <Pill className="mb-4">FAQ</Pill>
+          <h2 className="text-3xl md:text-4xl font-sentient leading-tight tracking-[-0.015em]">
             Frequently asked <i className="font-light">questions</i>
           </h2>
         </div>
@@ -57,7 +56,7 @@ export function FAQ() {
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full py-6 flex items-start justify-between gap-4 text-left group"
               >
-                <span className="font-mono text-sm md:text-base text-foreground/80 group-hover:text-foreground transition-colors duration-150">
+                <span className="font-mono text-sm md:text-base text-foreground/80 group-hover:text-foreground transition-colors duration-150 leading-snug tracking-[-0.01em]">
                   {faq.question}
                 </span>
                 <span className="flex-shrink-0 mt-0.5 text-foreground/40">
@@ -74,7 +73,7 @@ export function FAQ() {
                   openIndex === index ? "max-h-96 pb-6" : "max-h-0",
                 )}
               >
-                <p className="font-mono text-sm text-foreground/50 leading-relaxed">
+                <p className="font-mono text-sm text-foreground/50 leading-snug tracking-[-0.01em]">
                   {faq.answer}
                 </p>
               </div>

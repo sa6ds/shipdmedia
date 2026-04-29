@@ -28,7 +28,7 @@ export const Logo = ({ className }: { className?: string }) => {
           strokeLinecap="round"
         />
       </svg>
-      Shipd Media
+      <span>Shipd Media</span>
     </span>
   );
 };
