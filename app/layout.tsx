@@ -8,10 +8,48 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://shipdmedia.com";
+
 export const metadata: Metadata = {
-  title: "Shipd Media",
-  description: "Minimal influencer marketing campaigns that scale brand reach",
-  generator: "v0.app",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Shipd Media — Influencer marketing that scales reach",
+    template: "%s · Shipd Media",
+  },
+  description:
+    "Strategic influencer partnerships and creator campaigns that connect brands with engaged audiences—measurable reach, creative storytelling, and growth-focused execution.",
+  keywords: [
+    "influencer marketing",
+    "creator partnerships",
+    "brand campaigns",
+    "social campaigns",
+    "Shipd Media",
+  ],
+  authors: [{ name: "Shipd Media" }],
+  creator: "Shipd Media",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "/",
+    siteName: "Shipd Media",
+    title: "Shipd Media — Influencer marketing that scales reach",
+    description:
+      "Strategic influencer partnerships that connect your brand with engaged audiences—campaign strategy, creator sourcing, and performance-focused execution.",
+  },
+  twitter: {
+    card: "summary",
+    title: "Shipd Media — Influencer marketing that scales reach",
+    description:
+      "Strategic influencer partnerships and creator campaigns built for measurable reach and engagement.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  icons: {
+    icon: [{ url: "/shipd-mark.svg", type: "image/svg+xml" }],
+  },
 };
 
 export default function RootLayout({

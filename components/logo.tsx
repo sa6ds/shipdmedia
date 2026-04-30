@@ -22,7 +22,7 @@ export const Logo = ({ className }: { className?: string }) => {
           strokeLinejoin="round"
         />
         <path
-          d="M6 19C7.2 20 8.4 20 9.6 19C10.8 18 12 18 13.2 19C14.4 20 15.6 20 16.8 19C18 18 19.2 18 20.4 19"
+          d="M3 19C4.2 20 5.4 20 6.6 19C7.8 18 9 18 10.2 19C11.4 20 12.6 20 13.8 19C15 18 16.2 18 17.4 19C18.6 20 19.8 20 21 19"
           stroke="currentColor"
           strokeWidth="1.4"
           strokeLinecap="round"
