@@ -8,9 +8,9 @@ const footerLinks = {
     { name: "FAQ", href: "#faq" },
   ],
   services: [
-    { name: "Brand Partnerships", href: "#services" },
-    { name: "Creator Management", href: "#creators" },
+    { name: "Creator Sourcing", href: "#services" },
     { name: "Campaign Strategy", href: "#services" },
+    { name: "Paid Amplification", href: "#services" },
   ],
   social: [
     { name: "Instagram", href: "https://instagram.com" },

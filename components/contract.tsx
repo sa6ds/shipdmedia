@@ -24,7 +24,7 @@ export function Contract() {
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button asChild size="sm">
               <Link
-                href="https://calendly.com/sa6ds1/30min"
+                href="https://calendly.com/shipdmedia/30min"
                 target="_blank"
                 rel="noopener noreferrer"
               >
