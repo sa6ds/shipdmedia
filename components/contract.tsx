@@ -32,7 +32,7 @@ export function Contract() {
               </Link>
             </Button>
             <Button asChild size="sm">
-              <Link href="mailto:hello@shipdmedia.com">[Email Us]</Link>
+              <Link href="mailto:shipdmedia@gmail.com">[Email Us]</Link>
             </Button>
           </div>
         </div>
